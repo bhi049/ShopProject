@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Container, VStack, Heading, Box, Button, useColorModeValue, Input, useToast} from '@chakra-ui/react'
 import { useProductStore } from '../store/product';
+import { set } from 'mongoose';
 
 
 const CreatePage = () => {
@@ -32,6 +33,11 @@ const CreatePage = () => {
         isClosable: true,
       });
     }
+    setNewProduct({
+      name: "",
+      price: "",
+      image: "",
+    })
   }
 
   return <Container maxW={"container.sm"}>

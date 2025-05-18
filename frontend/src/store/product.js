@@ -31,10 +31,27 @@ export const useProductStore = create((set) => ({
     if (!data.success) {
       return { success: false, message: data.message }
     }
+    // Update the ui immediately, without needing to reresh the page
     set((state) => ({
       products: state.products.filter((product) => product._id !== pid),
     }));
     return { success: true, message: data.message };
   },
+  updateProduct: async (pid, updatedProduct) => {
+    const res = await fetch(`/api/products/${pid}`, {
+      method: "PUT",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify(updatedProduct),
+    });
+    const data = await res.json();
+    if (!data.success) return { success: false, message: data.message };
 
+    // Update the ui immediately, without needing to reresh the page
+    set((state) => ({
+      products: state.products.map((product) => (product._id === pid ? data.data : product)),
+    })); 
+    return { success: true, message: data.message };
+  },
 }));

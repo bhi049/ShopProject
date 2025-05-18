@@ -3,6 +3,52 @@ A full-stack MERN (MongoDB, Express, React, Node.js) application for managing pr
 
 ---
 
+## 📸 Screenshots
+
+<details>
+<summary>📂 Click to expand screenshots</summary>
+
+### 🏠 Home Page
+
+<table>
+  <tr>
+    <td align="center"><b>Dark Mode</b><br><img src="./frontend/src/assets/HomePageWithProducts.png" width="300"/></td>
+    <td align="center"><b>Light Mode</b><br><img src="./frontend/src/assets/LightModeHomePage.png" width="300"/></td>
+  </tr>
+</table>
+
+### ➕ Create Product
+
+<table>
+  <tr>
+    <td align="center"><b>Dark Mode</b><br><img src="./frontend/src/assets/CreatePage.png" width="300"/></td>
+    <td align="center"><b>Light Mode</b><br><img src="./frontend/src/assets/LightModeCreatePage.png" width="300"/></td>
+  </tr>
+</table>
+
+### 📝 Update Product
+
+<table>
+  <tr>
+    <td align="center"><b>Dark Mode</b><br><img src="./frontend/src/assets/UpdateProduct.png" width="300"/></td>
+    <td align="center"><b>Light Mode</b><br><img src="./frontend/src/assets/LightModeUpdateProduct.png" width="300"/></td>
+  </tr>
+</table>
+
+### 📭 No Products Found
+
+<table>
+  <tr>
+    <td align="center"><b>Dark Mode</b><br><img src="./frontend/src/assets/HomePageNoProducts.png" width="300"/></td>
+    <td align="center"><b>Light Mode</b><br><img src="./frontend/src/assets/LightModeHomePageNoProducts.png" width="300"/></td>
+  </tr>
+</table>
+
+</details>
+
+
+---
+
 ## 🚀 Features
 
 - View, create, update, and delete products
